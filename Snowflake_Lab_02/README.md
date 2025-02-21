@@ -18,7 +18,7 @@ Before setting up the environment, create a `dev` branch in your forked reposito
 📌 **Important**: Ensure the `dev` branch exists before proceeding.  
 Refer to the Quickstart guide for instructions.
 
-<img src="C:\Users\Ketki\OneDrive\Desktop\NEU\Big_data_7245\Snowflake_Labs\Snowflake_Lab_02\Screenshots_of_Steps\setup_branch.png" width=800px>
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/setup_branch.png" width=800px>
 
 ---
 
@@ -56,7 +56,7 @@ Refer to the Quickstart guide for instructions.
    - Press **CMD/CTRL + Enter**, or  
    - Click the **Run arrow** in the top-right.
 
-✅ **Screenshot**: Notebook execution confirmation.
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/setup_variable.png" width=800px>
 
 ---
 
@@ -73,23 +73,26 @@ Refer to the Quickstart guide for instructions.
 6. **Create Event Table** (`DEMO_EVENTS`) and assign permissions.
 
 ✅ **Screenshot**: Environment setup confirmation.  
-<img src="images/step03_setup_snowflake.png" width=800px>
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/create_db_role.png" width=800px>
 
 ---
 
 ## **Step 7: Deploy Notebooks to Dev**
 - Execute `deploy_notebooks.sql` using `EXECUTE IMMEDIATE FROM`.
 
-✅ **Screenshot**: Successful deployment.  
-<img src="images/step04_deploy_dev.png" width=800px>
+✅ **Screenshot**: Successful deployment. 
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/deploy_notebook.png" width=800px>
 
 ---
 
 ## **Step 8: Load Weather Data**
 - Subscribe to **"Weather Source LLC: frostbyte"** in **Snowflake Data Marketplace**.
 
-✅ **Screenshot**: Subscription confirmation.  
-<img src="images/step05_load_weather.png" width=800px>
+✅ **Screenshot**: Subscription confirmation.
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_weather_data.png" width=800px>
 
 ---
 
@@ -98,8 +101,9 @@ Refer to the Quickstart guide for instructions.
   - **LOCATION** table
   - **ORDER_DETAIL** table
 
-✅ **Screenshot**: Sample rows from loaded tables.  
-<img src="images/step06_load_excel.png" width=800px>
+✅ **Screenshot**: Sample rows from loaded tables. 
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_excel_files.png" width=800px>
 
 ---
 
@@ -107,7 +111,8 @@ Refer to the Quickstart guide for instructions.
 - Run `DEV_07_load_daily_city_metrics` Notebook to create `DAILY_CITY_METRICS`.
 
 ✅ **Screenshot**: Table verification.  
-<img src="images/step07_load_metrics.png" width=800px>
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_weather_data.png" width=800px>
 
 ---
 
@@ -118,7 +123,8 @@ Refer to the Quickstart guide for instructions.
 - Deploy and run the DAG.
 
 ✅ **Screenshot**: DAG execution result.  
-<img src="images/step08_orchestrate_pipeline.png" width=800px>
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/pipeline.png" width=800px>
 
 ---
 
@@ -128,7 +134,12 @@ Refer to the Quickstart guide for instructions.
 3. Deploy and run the **production DAG**.
 
 ✅ **Screenshot**: Successful deployment.  
-<img src="images/step09_deploy_prod.png" width=800px>
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/pull_request.png" width=800px>
+
+---
+
+<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/deplyed.png" width=800px>
 
 ---
 
