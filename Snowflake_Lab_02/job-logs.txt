@@ -1,0 +1,392 @@
+﻿2025-02-21T00:22:11.3057157Z Current runner version: '2.322.0'
+2025-02-21T00:22:11.3083790Z ##[group]Operating System
+2025-02-21T00:22:11.3084631Z Ubuntu
+2025-02-21T00:22:11.3085365Z 24.04.1
+2025-02-21T00:22:11.3085954Z LTS
+2025-02-21T00:22:11.3086583Z ##[endgroup]
+2025-02-21T00:22:11.3087253Z ##[group]Runner Image
+2025-02-21T00:22:11.3087956Z Image: ubuntu-24.04
+2025-02-21T00:22:11.3088682Z Version: 20250209.1.0
+2025-02-21T00:22:11.3089844Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250209.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-21T00:22:11.3091465Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.1
+2025-02-21T00:22:11.3092669Z ##[endgroup]
+2025-02-21T00:22:11.3093327Z ##[group]Runner Image Provisioner
+2025-02-21T00:22:11.3094149Z 2.0.422.1
+2025-02-21T00:22:11.3094792Z ##[endgroup]
+2025-02-21T00:22:11.3097324Z ##[group]GITHUB_TOKEN Permissions
+2025-02-21T00:22:11.3099301Z Actions: write
+2025-02-21T00:22:11.3100252Z Attestations: write
+2025-02-21T00:22:11.3101070Z Checks: write
+2025-02-21T00:22:11.3101752Z Contents: write
+2025-02-21T00:22:11.3102593Z Deployments: write
+2025-02-21T00:22:11.3103407Z Discussions: write
+2025-02-21T00:22:11.3104046Z Issues: write
+2025-02-21T00:22:11.3104754Z Metadata: read
+2025-02-21T00:22:11.3105419Z Packages: write
+2025-02-21T00:22:11.3106063Z Pages: write
+2025-02-21T00:22:11.3106720Z PullRequests: write
+2025-02-21T00:22:11.3107414Z RepositoryProjects: write
+2025-02-21T00:22:11.3108150Z SecurityEvents: write
+2025-02-21T00:22:11.3108809Z Statuses: write
+2025-02-21T00:22:11.3109413Z ##[endgroup]
+2025-02-21T00:22:11.3112650Z Secret source: Actions
+2025-02-21T00:22:11.3113505Z Prepare workflow directory
+2025-02-21T00:22:11.3422086Z Prepare all required actions
+2025-02-21T00:22:11.3458708Z Getting action download info
+2025-02-21T00:22:11.5713440Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-02-21T00:22:11.5714693Z Version: 4.2.2
+2025-02-21T00:22:11.5715815Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-21T00:22:11.5717482Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-21T00:22:11.5718347Z ##[endgroup]
+2025-02-21T00:22:11.6723656Z ##[group]Download immutable action package 'actions/setup-python@v5'
+2025-02-21T00:22:11.6724521Z Version: 5.4.0
+2025-02-21T00:22:11.6725288Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-21T00:22:11.6726277Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-21T00:22:11.6726982Z ##[endgroup]
+2025-02-21T00:22:11.9771577Z Complete job name: deploy
+2025-02-21T00:22:12.0513334Z ##[group]Run actions/checkout@v4
+2025-02-21T00:22:12.0514388Z with:
+2025-02-21T00:22:12.0515102Z   repository: ketki-mude/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.0516127Z   token: ***
+2025-02-21T00:22:12.0516671Z   ssh-strict: true
+2025-02-21T00:22:12.0517235Z   ssh-user: git
+2025-02-21T00:22:12.0517806Z   persist-credentials: true
+2025-02-21T00:22:12.0518416Z   clean: true
+2025-02-21T00:22:12.0519019Z   sparse-checkout-cone-mode: true
+2025-02-21T00:22:12.0519682Z   fetch-depth: 1
+2025-02-21T00:22:12.0520228Z   fetch-tags: false
+2025-02-21T00:22:12.0520802Z   show-progress: true
+2025-02-21T00:22:12.0521361Z   lfs: false
+2025-02-21T00:22:12.0521883Z   submodules: false
+2025-02-21T00:22:12.0522591Z   set-safe-directory: true
+2025-02-21T00:22:12.0523458Z ##[endgroup]
+2025-02-21T00:22:12.2594210Z Syncing repository: ketki-mude/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.2596228Z ##[group]Getting Git version info
+2025-02-21T00:22:12.2597525Z Working directory is '/home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks'
+2025-02-21T00:22:12.2599048Z [command]/usr/bin/git version
+2025-02-21T00:22:12.2695252Z git version 2.48.1
+2025-02-21T00:22:12.2721915Z ##[endgroup]
+2025-02-21T00:22:12.2735579Z Temporarily overriding HOME='/home/runner/work/_temp/a1582b9e-8712-4473-9277-6dd3eb419110' before making global git config changes
+2025-02-21T00:22:12.2738183Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-21T00:22:12.2748234Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.2783551Z Deleting the contents of '/home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks'
+2025-02-21T00:22:12.2786657Z ##[group]Initializing the repository
+2025-02-21T00:22:12.2791865Z [command]/usr/bin/git init /home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.2872588Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-21T00:22:12.2874646Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-21T00:22:12.2876493Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-21T00:22:12.2877971Z hint:
+2025-02-21T00:22:12.2879104Z hint: 	git config --global init.defaultBranch <name>
+2025-02-21T00:22:12.2880352Z hint:
+2025-02-21T00:22:12.2881607Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-21T00:22:12.2883707Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-21T00:22:12.2885216Z hint:
+2025-02-21T00:22:12.2886191Z hint: 	git branch -m <name>
+2025-02-21T00:22:12.2888545Z Initialized empty Git repository in /home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks/.git/
+2025-02-21T00:22:12.2891735Z [command]/usr/bin/git remote add origin https://github.com/ketki-mude/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.2924381Z ##[endgroup]
+2025-02-21T00:22:12.2925923Z ##[group]Disabling automatic garbage collection
+2025-02-21T00:22:12.2929153Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-21T00:22:12.2959096Z ##[endgroup]
+2025-02-21T00:22:12.2960640Z ##[group]Setting up auth
+2025-02-21T00:22:12.2966669Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-21T00:22:12.2997991Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-21T00:22:12.3323262Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-21T00:22:12.3355897Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-21T00:22:12.3600437Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-21T00:22:12.3646921Z ##[endgroup]
+2025-02-21T00:22:12.3649642Z ##[group]Fetching the repository
+2025-02-21T00:22:12.3658825Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +29b0dd2b4d2cbf513bdf5a53c5b864399ca44719:refs/remotes/origin/main
+2025-02-21T00:22:12.7871234Z From https://github.com/ketki-mude/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:12.7873711Z  * [new ref]         29b0dd2b4d2cbf513bdf5a53c5b864399ca44719 -> origin/main
+2025-02-21T00:22:12.7899135Z ##[endgroup]
+2025-02-21T00:22:12.7901035Z ##[group]Determining the checkout info
+2025-02-21T00:22:12.7903366Z ##[endgroup]
+2025-02-21T00:22:12.7907060Z [command]/usr/bin/git sparse-checkout disable
+2025-02-21T00:22:12.7947672Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-21T00:22:12.7975752Z ##[group]Checking out the ref
+2025-02-21T00:22:12.7978826Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-21T00:22:12.8078783Z Switched to a new branch 'main'
+2025-02-21T00:22:12.8082639Z branch 'main' set up to track 'origin/main'.
+2025-02-21T00:22:12.8088772Z ##[endgroup]
+2025-02-21T00:22:12.8120610Z [command]/usr/bin/git log -1 --format=%H
+2025-02-21T00:22:12.8143022Z 29b0dd2b4d2cbf513bdf5a53c5b864399ca44719
+2025-02-21T00:22:12.8519249Z ##[group]Run actions/setup-python@v5
+2025-02-21T00:22:12.8520360Z with:
+2025-02-21T00:22:12.8521151Z   python-version: 3.10
+2025-02-21T00:22:12.8522087Z   check-latest: false
+2025-02-21T00:22:12.8523490Z   token: ***
+2025-02-21T00:22:12.8524331Z   update-environment: true
+2025-02-21T00:22:12.8525342Z   allow-prereleases: false
+2025-02-21T00:22:12.8526311Z ##[endgroup]
+2025-02-21T00:22:13.0400327Z ##[group]Installed versions
+2025-02-21T00:22:13.0466766Z Successfully set up CPython (3.10.16)
+2025-02-21T00:22:13.0469428Z ##[endgroup]
+2025-02-21T00:22:13.0620869Z ##[group]Run pip install -r requirements.txt
+2025-02-21T00:22:13.0622638Z [36;1mpip install -r requirements.txt[0m
+2025-02-21T00:22:13.0807783Z shell: /usr/bin/bash -e {0}
+2025-02-21T00:22:13.0809252Z env:
+2025-02-21T00:22:13.0810471Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:13.0812699Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.16/x64/lib/pkgconfig
+2025-02-21T00:22:13.0814819Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:13.0817001Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:13.0818801Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:13.0820649Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.16/x64/lib
+2025-02-21T00:22:13.0822178Z ##[endgroup]
+2025-02-21T00:22:17.3616716Z Collecting snowflake-cli-labs (from -r requirements.txt (line 1))
+2025-02-21T00:22:17.9695230Z   Downloading snowflake_cli_labs-3.4.1-py3-none-any.whl.metadata (14 kB)
+2025-02-21T00:22:17.9929072Z Collecting snowflake-snowpark-python (from -r requirements.txt (line 2))
+2025-02-21T00:22:18.0123947Z   Downloading snowflake_snowpark_python-1.28.0-py3-none-any.whl.metadata (123 kB)
+2025-02-21T00:22:18.0716702Z Collecting snowflake (from -r requirements.txt (line 3))
+2025-02-21T00:22:18.0909775Z   Downloading snowflake-1.0.5-py3-none-any.whl.metadata (2.0 kB)
+2025-02-21T00:22:18.1097178Z Collecting snowflake-cli==3.4.1 (from snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.1286906Z   Downloading snowflake_cli-3.4.1-py3-none-any.whl.metadata (18 kB)
+2025-02-21T00:22:18.1731453Z Collecting gitpython==3.1.44 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.1923495Z   Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+2025-02-21T00:22:18.2148965Z Collecting jinja2==3.1.5 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.2342547Z   Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+2025-02-21T00:22:18.2527438Z Collecting packaging (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.2718365Z   Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-21T00:22:18.2757476Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1)) (25.0.1)
+2025-02-21T00:22:18.2911791Z Collecting pluggy==1.5.0 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.3117951Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-21T00:22:18.4178411Z Collecting pydantic==2.10.4 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.4373471Z   Downloading pydantic-2.10.4-py3-none-any.whl.metadata (29 kB)
+2025-02-21T00:22:18.4739928Z Collecting pyyaml==6.0.2 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.4937853Z   Downloading PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+2025-02-21T00:22:18.5235226Z Collecting requests==2.32.3 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.5425532Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2025-02-21T00:22:18.5659706Z Collecting requirements-parser==0.11.0 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.5852685Z   Downloading requirements_parser-0.11.0-py3-none-any.whl.metadata (4.7 kB)
+2025-02-21T00:22:18.6292792Z Collecting rich==13.9.4 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.6487092Z   Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+2025-02-21T00:22:18.7696387Z Collecting setuptools==75.8.0 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.7892850Z   Downloading setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-21T00:22:18.9197343Z Collecting snowflake-connector-python==3.13.2 (from snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.9398852Z   Downloading snowflake_connector_python-3.13.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (67 kB)
+2025-02-21T00:22:18.9778257Z Collecting snowflake-core==1.0.2 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:18.9974530Z   Downloading snowflake_core-1.0.2-py3-none-any.whl.metadata (1.8 kB)
+2025-02-21T00:22:19.0048647Z Collecting snowflake-snowpark-python (from -r requirements.txt (line 2))
+2025-02-21T00:22:19.0239752Z   Downloading snowflake_snowpark_python-1.25.0-py3-none-any.whl.metadata (109 kB)
+2025-02-21T00:22:19.0766569Z Collecting tomlkit==0.13.2 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.0959996Z   Downloading tomlkit-0.13.2-py3-none-any.whl.metadata (2.7 kB)
+2025-02-21T00:22:19.1144469Z Collecting typer==0.12.5 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.1334205Z   Downloading typer-0.12.5-py3-none-any.whl.metadata (15 kB)
+2025-02-21T00:22:19.1661663Z Collecting urllib3<2.4,>=1.24.3 (from snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.1853105Z   Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+2025-02-21T00:22:19.2066845Z Collecting gitdb<5,>=4.0.1 (from gitpython==3.1.44->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.2258471Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2025-02-21T00:22:19.2755855Z Collecting MarkupSafe>=2.0 (from jinja2==3.1.5->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.2952739Z   Downloading MarkupSafe-3.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+2025-02-21T00:22:19.3102636Z Collecting annotated-types>=0.6.0 (from pydantic==2.10.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.3295096Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-02-21T00:22:19.8339467Z Collecting pydantic-core==2.27.2 (from pydantic==2.10.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.8539084Z   Downloading pydantic_core-2.27.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+2025-02-21T00:22:19.8726128Z Collecting typing-extensions>=4.12.2 (from pydantic==2.10.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.8917015Z   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-21T00:22:19.9577273Z Collecting charset-normalizer<4,>=2 (from requests==2.32.3->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:19.9770598Z   Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+2025-02-21T00:22:19.9947937Z Collecting idna<4,>=2.5 (from requests==2.32.3->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.0139694Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-02-21T00:22:20.0488768Z Collecting certifi>=2017.4.17 (from requests==2.32.3->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.0678977Z   Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+2025-02-21T00:22:20.1109027Z Collecting types-setuptools>=69.1.0 (from requirements-parser==0.11.0->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.1301926Z   Downloading types_setuptools-75.8.0.20250210-py3-none-any.whl.metadata (2.2 kB)
+2025-02-21T00:22:20.1484856Z Collecting markdown-it-py>=2.2.0 (from rich==13.9.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.1683116Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-21T00:22:20.1958341Z Collecting pygments<3.0.0,>=2.13.0 (from rich==13.9.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.2150840Z   Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-02-21T00:22:20.2375812Z Collecting asn1crypto<2.0.0,>0.24.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.2564964Z   Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+2025-02-21T00:22:20.3456167Z Collecting cffi<2.0.0,>=1.9 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.3646851Z   Downloading cffi-1.17.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+2025-02-21T00:22:20.5232944Z Collecting cryptography>=3.1.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.5427364Z   Downloading cryptography-44.0.1-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+2025-02-21T00:22:20.5711982Z Collecting pyOpenSSL<25.0.0,>=22.0.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.5901738Z   Downloading pyOpenSSL-24.3.0-py3-none-any.whl.metadata (15 kB)
+2025-02-21T00:22:20.6159978Z Collecting pyjwt<3.0.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.6351804Z   Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+2025-02-21T00:22:20.6773971Z Collecting pytz (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.6964287Z   Downloading pytz-2025.1-py2.py3-none-any.whl.metadata (22 kB)
+2025-02-21T00:22:20.7324626Z Collecting filelock<4,>=3.5 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.7517280Z   Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-21T00:22:20.7734269Z Collecting sortedcontainers>=2.4.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.7924732Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+2025-02-21T00:22:20.8130954Z Collecting platformdirs<5.0.0,>=2.6.0 (from snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.8322018Z   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-21T00:22:20.8813386Z Collecting keyring<26.0.0,>=23.1.0 (from snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.9002815Z   Downloading keyring-25.6.0-py3-none-any.whl.metadata (20 kB)
+2025-02-21T00:22:20.9209851Z Collecting atpublic>=4 (from snowflake-core==1.0.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.9404236Z   Downloading atpublic-5.1-py3-none-any.whl.metadata (1.8 kB)
+2025-02-21T00:22:20.9683838Z Collecting python-dateutil>=2.8.2 (from snowflake-core==1.0.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:20.9874836Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-21T00:22:21.0109032Z Collecting click>=8.0.0 (from typer==0.12.5->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.0299516Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+2025-02-21T00:22:21.0498808Z Collecting shellingham>=1.3.0 (from typer==0.12.5->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.0694927Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2025-02-21T00:22:21.1563385Z Collecting wheel (from snowflake-snowpark-python->-r requirements.txt (line 2))
+2025-02-21T00:22:21.1754286Z   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-02-21T00:22:21.3245465Z Collecting protobuf<6,>=3.20 (from snowflake-snowpark-python->-r requirements.txt (line 2))
+2025-02-21T00:22:21.3439794Z   Downloading protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+2025-02-21T00:22:21.3614571Z Collecting tzlocal (from snowflake-snowpark-python->-r requirements.txt (line 2))
+2025-02-21T00:22:21.3808395Z   Downloading tzlocal-5.3-py3-none-any.whl.metadata (7.6 kB)
+2025-02-21T00:22:21.4060554Z Collecting cloudpickle!=2.1.0,!=2.2.0,<=2.2.1,>=1.6.0 (from snowflake-snowpark-python->-r requirements.txt (line 2))
+2025-02-21T00:22:21.4253103Z   Downloading cloudpickle-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+2025-02-21T00:22:21.4318555Z INFO: pip is looking at multiple versions of snowflake to determine which version is compatible with other requirements. This could take a while.
+2025-02-21T00:22:21.4322562Z Collecting snowflake (from -r requirements.txt (line 3))
+2025-02-21T00:22:21.4518818Z   Downloading snowflake-1.0.4-py3-none-any.whl.metadata (2.0 kB)
+2025-02-21T00:22:21.4759582Z   Downloading snowflake-1.0.3-py3-none-any.whl.metadata (2.0 kB)
+2025-02-21T00:22:21.5005220Z   Downloading snowflake-1.0.2-py3-none-any.whl.metadata (1.9 kB)
+2025-02-21T00:22:21.5146255Z Collecting snowflake-legacy (from snowflake->-r requirements.txt (line 3))
+2025-02-21T00:22:21.5339435Z   Downloading snowflake_legacy-1.0.0-py3-none-any.whl.metadata (2.5 kB)
+2025-02-21T00:22:21.5628895Z Collecting pycparser (from cffi<2.0.0,>=1.9->snowflake-connector-python==3.13.2->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.5821990Z   Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+2025-02-21T00:22:21.6137622Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython==3.1.44->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.6330833Z   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+2025-02-21T00:22:21.6516197Z Collecting SecretStorage>=3.2 (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.6716162Z   Downloading SecretStorage-3.3.3-py3-none-any.whl.metadata (4.0 kB)
+2025-02-21T00:22:21.6850163Z Collecting jeepney>=0.4.2 (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.7040112Z   Downloading jeepney-0.8.0-py3-none-any.whl.metadata (1.3 kB)
+2025-02-21T00:22:21.7662061Z Collecting importlib_metadata>=4.11.4 (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.7856645Z   Downloading importlib_metadata-8.6.1-py3-none-any.whl.metadata (4.7 kB)
+2025-02-21T00:22:21.8035656Z Collecting jaraco.classes (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.8229650Z   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-21T00:22:21.8415108Z Collecting jaraco.functools (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.8606100Z   Downloading jaraco.functools-4.1.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-21T00:22:21.8790702Z Collecting jaraco.context (from keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.8981573Z   Downloading jaraco.context-6.0.1-py3-none-any.whl.metadata (4.1 kB)
+2025-02-21T00:22:21.9141072Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich==13.9.4->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.9333426Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-02-21T00:22:21.9725637Z Collecting six>=1.5 (from python-dateutil>=2.8.2->snowflake-core==1.0.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:21.9918735Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-21T00:22:22.0201146Z Collecting zipp>=3.20 (from importlib_metadata>=4.11.4->keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:22.0391836Z   Downloading zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)
+2025-02-21T00:22:22.0888242Z Collecting more-itertools (from jaraco.classes->keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:22.1079437Z   Downloading more_itertools-10.6.0-py3-none-any.whl.metadata (37 kB)
+2025-02-21T00:22:22.1236652Z Collecting backports.tarfile (from jaraco.context->keyring<26.0.0,>=23.1.0->snowflake-connector-python[secure-local-storage]==3.13.2->snowflake-cli==3.4.1->snowflake-cli-labs->-r requirements.txt (line 1))
+2025-02-21T00:22:22.1429212Z   Downloading backports.tarfile-1.2.0-py3-none-any.whl.metadata (2.0 kB)
+2025-02-21T00:22:22.1793452Z Downloading snowflake_cli_labs-3.4.1-py3-none-any.whl (9.9 kB)
+2025-02-21T00:22:22.2023370Z Downloading snowflake_cli-3.4.1-py3-none-any.whl (439 kB)
+2025-02-21T00:22:22.2505252Z Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)
+2025-02-21T00:22:22.2743794Z Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-02-21T00:22:22.2977419Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-21T00:22:22.3197396Z Downloading pydantic-2.10.4-py3-none-any.whl (431 kB)
+2025-02-21T00:22:22.3462186Z Downloading PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+2025-02-21T00:22:22.3584904Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 751.2/751.2 kB 59.4 MB/s eta 0:00:00
+2025-02-21T00:22:22.3776033Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-02-21T00:22:22.3999624Z Downloading requirements_parser-0.11.0-py3-none-any.whl (14 kB)
+2025-02-21T00:22:22.4219339Z Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+2025-02-21T00:22:22.4448298Z Downloading setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-21T00:22:22.4581200Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 91.1 MB/s eta 0:00:00
+2025-02-21T00:22:22.4772975Z Downloading snowflake_connector_python-3.13.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.5 MB)
+2025-02-21T00:22:22.5042905Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 92.4 MB/s eta 0:00:00
+2025-02-21T00:22:22.5236778Z Downloading snowflake_core-1.0.2-py3-none-any.whl (1.6 MB)
+2025-02-21T00:22:22.5391111Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 106.9 MB/s eta 0:00:00
+2025-02-21T00:22:22.5580863Z Downloading tomlkit-0.13.2-py3-none-any.whl (37 kB)
+2025-02-21T00:22:22.5804753Z Downloading typer-0.12.5-py3-none-any.whl (47 kB)
+2025-02-21T00:22:22.6022784Z Downloading pydantic_core-2.27.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+2025-02-21T00:22:22.6152662Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 164.6 MB/s eta 0:00:00
+2025-02-21T00:22:22.6344769Z Downloading snowflake_snowpark_python-1.25.0-py3-none-any.whl (1.4 MB)
+2025-02-21T00:22:22.6465986Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 121.9 MB/s eta 0:00:00
+2025-02-21T00:22:22.6654140Z Downloading snowflake-1.0.2-py3-none-any.whl (5.6 kB)
+2025-02-21T00:22:22.6868631Z Downloading cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+2025-02-21T00:22:22.7082537Z Downloading protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+2025-02-21T00:22:22.7315693Z Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-21T00:22:22.7528491Z Downloading snowflake_legacy-1.0.0-py3-none-any.whl (3.1 kB)
+2025-02-21T00:22:22.7745494Z Downloading tzlocal-5.3-py3-none-any.whl (17 kB)
+2025-02-21T00:22:22.7959252Z Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-02-21T00:22:22.8183288Z Downloading packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-21T00:22:22.8410074Z Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-02-21T00:22:22.8629349Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-02-21T00:22:22.8842948Z Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+2025-02-21T00:22:22.9061263Z Downloading atpublic-5.1-py3-none-any.whl (5.2 kB)
+2025-02-21T00:22:22.9365589Z Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+2025-02-21T00:22:22.9591890Z Downloading cffi-1.17.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (446 kB)
+2025-02-21T00:22:22.9831690Z Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (146 kB)
+2025-02-21T00:22:23.0053627Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-02-21T00:22:23.0270039Z Downloading cryptography-44.0.1-cp39-abi3-manylinux_2_34_x86_64.whl (4.2 MB)
+2025-02-21T00:22:23.0544578Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 159.6 MB/s eta 0:00:00
+2025-02-21T00:22:23.0736888Z Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-02-21T00:22:23.0964696Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-02-21T00:22:23.1176872Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-02-21T00:22:23.1396991Z Downloading keyring-25.6.0-py3-none-any.whl (39 kB)
+2025-02-21T00:22:23.1608604Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-02-21T00:22:23.1825072Z Downloading MarkupSafe-3.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+2025-02-21T00:22:23.2036508Z Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-21T00:22:23.2265881Z Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-02-21T00:22:23.2368065Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 125.4 MB/s eta 0:00:00
+2025-02-21T00:22:23.2556793Z Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+2025-02-21T00:22:23.2771754Z Downloading pyOpenSSL-24.3.0-py3-none-any.whl (56 kB)
+2025-02-21T00:22:23.2988771Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-21T00:22:23.3232036Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2025-02-21T00:22:23.3450755Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+2025-02-21T00:22:23.3667218Z Downloading types_setuptools-75.8.0.20250210-py3-none-any.whl (71 kB)
+2025-02-21T00:22:23.3890408Z Downloading pytz-2025.1-py2.py3-none-any.whl (507 kB)
+2025-02-21T00:22:23.4131964Z Downloading importlib_metadata-8.6.1-py3-none-any.whl (26 kB)
+2025-02-21T00:22:23.4360602Z Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+2025-02-21T00:22:23.4577625Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-02-21T00:22:23.4804837Z Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+2025-02-21T00:22:23.5018327Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-21T00:22:23.5235424Z Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-02-21T00:22:23.5491029Z Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+2025-02-21T00:22:23.5704499Z Downloading jaraco.context-6.0.1-py3-none-any.whl (6.8 kB)
+2025-02-21T00:22:23.5921590Z Downloading jaraco.functools-4.1.0-py3-none-any.whl (10 kB)
+2025-02-21T00:22:23.6138677Z Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+2025-02-21T00:22:23.6360339Z Downloading zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-02-21T00:22:23.6593950Z Downloading backports.tarfile-1.2.0-py3-none-any.whl (30 kB)
+2025-02-21T00:22:23.6806392Z Downloading more_itertools-10.6.0-py3-none-any.whl (63 kB)
+2025-02-21T00:22:23.9299539Z Installing collected packages: sortedcontainers, pytz, asn1crypto, zipp, wheel, urllib3, tzlocal, typing-extensions, types-setuptools, tomlkit, snowflake-legacy, smmap, six, shellingham, setuptools, pyyaml, pyjwt, pygments, pycparser, protobuf, pluggy, platformdirs, packaging, more-itertools, mdurl, MarkupSafe, jeepney, idna, filelock, cloudpickle, click, charset-normalizer, certifi, backports.tarfile, atpublic, annotated-types, requirements-parser, requests, python-dateutil, pydantic-core, markdown-it-py, jinja2, jaraco.functools, jaraco.context, jaraco.classes, importlib_metadata, gitdb, cffi, rich, pydantic, gitpython, cryptography, typer, SecretStorage, pyOpenSSL, snowflake-connector-python, keyring, snowflake-snowpark-python, snowflake-core, snowflake-cli, snowflake, snowflake-cli-labs
+2025-02-21T00:22:24.3587789Z   Attempting uninstall: setuptools
+2025-02-21T00:22:24.3594329Z     Found existing installation: setuptools 65.5.0
+2025-02-21T00:22:24.3817879Z     Uninstalling setuptools-65.5.0:
+2025-02-21T00:22:24.3958391Z       Successfully uninstalled setuptools-65.5.0
+2025-02-21T00:22:29.5121105Z Successfully installed MarkupSafe-3.0.2 SecretStorage-3.3.3 annotated-types-0.7.0 asn1crypto-1.5.1 atpublic-5.1 backports.tarfile-1.2.0 certifi-2025.1.31 cffi-1.17.1 charset-normalizer-3.4.1 click-8.1.8 cloudpickle-2.2.1 cryptography-44.0.1 filelock-3.17.0 gitdb-4.0.12 gitpython-3.1.44 idna-3.10 importlib_metadata-8.6.1 jaraco.classes-3.4.0 jaraco.context-6.0.1 jaraco.functools-4.1.0 jeepney-0.8.0 jinja2-3.1.5 keyring-25.6.0 markdown-it-py-3.0.0 mdurl-0.1.2 more-itertools-10.6.0 packaging-24.2 platformdirs-4.3.6 pluggy-1.5.0 protobuf-5.29.3 pyOpenSSL-24.3.0 pycparser-2.22 pydantic-2.10.4 pydantic-core-2.27.2 pygments-2.19.1 pyjwt-2.10.1 python-dateutil-2.9.0.post0 pytz-2025.1 pyyaml-6.0.2 requests-2.32.3 requirements-parser-0.11.0 rich-13.9.4 setuptools-75.8.0 shellingham-1.5.4 six-1.17.0 smmap-5.0.2 snowflake-1.0.2 snowflake-cli-3.4.1 snowflake-cli-labs-3.4.1 snowflake-connector-python-3.13.2 snowflake-core-1.0.2 snowflake-legacy-1.0.0 snowflake-snowpark-python-1.25.0 sortedcontainers-2.4.0 tomlkit-0.13.2 typer-0.12.5 types-setuptools-75.8.0.20250210 typing-extensions-4.12.2 tzlocal-5.3 urllib3-2.3.0 wheel-0.45.1 zipp-3.21.0
+2025-02-21T00:22:29.7405281Z ##[group]Run snow sql -q "ALTER GIT REPOSITORY DEMO_GIT_REPO FETCH" --temporary-connection --account $SNOWFLAKE_ACCOUNT --user $SNOWFLAKE_USER --role $SNOWFLAKE_ROLE --warehouse $SNOWFLAKE_WAREHOUSE --database $SNOWFLAKE_DATABASE --schema $SNOWFLAKE_SCHEMA
+2025-02-21T00:22:29.7406950Z [36;1msnow sql -q "ALTER GIT REPOSITORY DEMO_GIT_REPO FETCH" --temporary-connection --account $SNOWFLAKE_ACCOUNT --user $SNOWFLAKE_USER --role $SNOWFLAKE_ROLE --warehouse $SNOWFLAKE_WAREHOUSE --database $SNOWFLAKE_DATABASE --schema $SNOWFLAKE_SCHEMA[0m
+2025-02-21T00:22:29.7408708Z [36;1msnow sql -q "EXECUTE IMMEDIATE FROM @DEMO_GIT_REPO/branches/main/scripts/deploy_notebooks.sql USING (env => 'PROD', branch => 'main')" --temporary-connection --account $SNOWFLAKE_ACCOUNT --user $SNOWFLAKE_USER --role $SNOWFLAKE_ROLE --warehouse $SNOWFLAKE_WAREHOUSE --database $SNOWFLAKE_DATABASE --schema $SNOWFLAKE_SCHEMA[0m
+2025-02-21T00:22:29.7410043Z [36;1m[0m
+2025-02-21T00:22:29.7410470Z [36;1m: # Ideally both Snow CLI and the Python Connector could be configured entirely from env variables[0m
+2025-02-21T00:22:29.7411281Z [36;1m: #python $GITHUB_WORKSPACE/scripts/deploy_task_dag.py *** PROD_SCHEMA[0m
+2025-02-21T00:22:29.7471189Z shell: /usr/bin/bash -e {0}
+2025-02-21T00:22:29.7471450Z env:
+2025-02-21T00:22:29.7471730Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:29.7472183Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.16/x64/lib/pkgconfig
+2025-02-21T00:22:29.7472836Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:29.7473237Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:29.7473626Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.16/x64
+2025-02-21T00:22:29.7474022Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.16/x64/lib
+2025-02-21T00:22:29.7474436Z   SNOWFLAKE_ACCOUNT: ***
+2025-02-21T00:22:29.7474697Z   SNOWFLAKE_USER: ***
+2025-02-21T00:22:29.7474946Z   SNOWFLAKE_PASSWORD: ***
+2025-02-21T00:22:29.7475206Z   SNOWFLAKE_ROLE: ***
+2025-02-21T00:22:29.7475442Z   SNOWFLAKE_WAREHOUSE: ***
+2025-02-21T00:22:29.7475709Z   SNOWFLAKE_DATABASE: ***
+2025-02-21T00:22:29.7475970Z   SNOWFLAKE_SCHEMA: ***
+2025-02-21T00:22:29.7476201Z ##[endgroup]
+2025-02-21T00:22:32.2934746Z ALTER GIT REPOSITORY DEMO_GIT_REPO FETCH
+2025-02-21T00:22:35.4665468Z +------------------------------+
+2025-02-21T00:22:35.4666310Z | scope  | name | result       |
+2025-02-21T00:22:35.4666783Z |--------+------+--------------|
+2025-02-21T00:22:35.4667215Z | Branch | dev  | FAST_FORWARD |
+2025-02-21T00:22:35.4667652Z | Branch | main | FAST_FORWARD |
+2025-02-21T00:22:35.4668096Z +------------------------------+
+2025-02-21T00:22:37.1055926Z EXECUTE IMMEDIATE FROM @DEMO_GIT_REPO/branches/main/scripts/deploy_notebooks.sql USING (env => 'PROD', branch => 'main')
+2025-02-21T00:22:51.1168467Z +------------------------------------+
+2025-02-21T00:22:51.1169061Z | status                             |
+2025-02-21T00:22:51.1169575Z |------------------------------------|
+2025-02-21T00:22:51.1170048Z | Live version successfully created. |
+2025-02-21T00:22:51.1170548Z +------------------------------------+
+2025-02-21T00:22:51.3096740Z Post job cleanup.
+2025-02-21T00:22:51.4753106Z Post job cleanup.
+2025-02-21T00:22:51.5681599Z [command]/usr/bin/git version
+2025-02-21T00:22:51.5718129Z git version 2.48.1
+2025-02-21T00:22:51.5760990Z Temporarily overriding HOME='/home/runner/work/_temp/8e3bc344-9ab7-449e-9cf5-fe94de3af95e' before making global git config changes
+2025-02-21T00:22:51.5762256Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-21T00:22:51.5773891Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sfguide-data-engineering-with-notebooks/sfguide-data-engineering-with-notebooks
+2025-02-21T00:22:51.5809433Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-21T00:22:51.5841694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-21T00:22:51.6078139Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-21T00:22:51.6098178Z http.https://github.com/.extraheader
+2025-02-21T00:22:51.6110514Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-21T00:22:51.6140673Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-21T00:22:51.6479852Z Cleaning up orphan processes
