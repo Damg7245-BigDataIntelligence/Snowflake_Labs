@@ -2,7 +2,7 @@
 This repository contains the code for the *Getting Started with Data Engineering using Snowflake Notebooks* Snowflake Quickstart.
 
 ### ➡️ For an overview, prerequisites, and detailed instructions, complete this end-to-end tutorial:  
-[Data Engineering Pipelines with Snowpark Python](https://quickstarts.snowflake.com/guide/data_engineering_pipelines_with_snowpark_python/index.html?index=..%2F..index#0) on Quickstarts.Snowflake.com.
+[Data Engineering Pipelines with Snowpark Python](https://quickstarts.snowflake.com/guide/data_engineering_pipelines_with_snowpark_python/index.html?index=..%2F..index#0) on Quickstarts on Snowflake.com.
 
 ___
 ### **Overview of the Tutorial**
@@ -106,58 +106,49 @@ SELECT ANALYTICS.FAHRENHEIT_TO_CELSIUS_UDF(35);
 
 ✅ **Screenshot**: Subscription confirmation.
 
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_weather_data.png" width=800px>
+<img src="images/09_Verifying_UDF.png" width=800px>
 
 ---
 
-## **Step 9: Load Excel Files**
-- Run `DEV_06_load_excel_files` Notebook to load:
-  - **LOCATION** table
-  - **ORDER_DETAIL** table
+## **Step 9: Orders and Daily City Metrics Update Sproc **
+Deploy a **Snowpark Python stored procedure (sproc)** to merge `HARMONIZED.POS_FLATTENED_V_STREAM` into `HARMONIZED.ORDERS`.  
 
 ✅ **Screenshot**: Sample rows from loaded tables. 
 
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_excel_files.png" width=800px>
+<img src="images/10_Harmonized_Tables.png" width=800px>
 
 ---
 
-## **Step 10: Load Daily City Metrics**
-- Run `DEV_07_load_daily_city_metrics` Notebook to create `DAILY_CITY_METRICS`.
+## **Step 10: Orchestrate Jobs **
+Use **Snowflake Tasks** to orchestrate Snowpark pipelines:  
+1. Create tasks for each stored procedure.  
+2. Chain and execute them.  
 
 ✅ **Screenshot**: Table verification.  
 
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/load_weather_data.png" width=800px>
+<img src="images/11_Tasks.png" width=800px>
 
 ---
 
-## **Step 11: Orchestrate Pipelines**
-- Use the **Snowflake Python API** to create a Task DAG:
-  - **Task 1**: `LOAD_EXCEL_FILES_TASK`
-  - **Task 2**: `LOAD_DAILY_CITY_METRICS`
-- Deploy and run the DAG.
+## **Step 11: Process Incrementally  s**
+- Run `steps/09_process_incrementally.sql` in VS Code to process new POS order data incrementally.  
 
 ✅ **Screenshot**: DAG execution result.  
 
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/pipeline.png" width=800px>
+<img src="images/12_Orders.png" width=800px>
 
 ---
 
 ## **Step 12: Deploy to Production**
-1. Modify a **notebook**, commit to `dev`, and merge to `main`.
-2. Run **GitHub Actions workflow** and verify deployment.
-3. Deploy and run the **production DAG**.
+- Modify `FAHRENHEIT_TO_CELSIUS_UDF()` to use a third-party package. Configure **GitHub Actions** with repository secrets for **SnowCLI** authentication.  
 
 ✅ **Screenshot**: Successful deployment.  
 
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/pull_request.png" width=800px>
-
----
-
-<img src="https://github.com/Damg7245-BigDataIntelligence/Snowflake_Labs/blob/main/Snowflake_Lab_02/images/deplyed.png" width=800px>
+<img src="images/13_CICD.png" width=800px>
 
 ---
 
 ## 🎯 **Final Thoughts**
-This guide walks through setting up, running, and deploying a **Snowflake Data Engineering pipeline** with Notebooks. Follow these structured steps to execute the workflow efficiently.
+This Quickstart guided you through building a data engineering pipeline using Snowpark Python, incorporating incremental processing, Snowflake Tasks, and CI/CD deployment. You explored UDFs, stored procedures, Streams for CDC, and the Snowpark DataFrame API, along with SnowCLI and the VS Code extension for seamless development. With these fundamentals, you're ready to build and optimize your own scalable Snowflake pipelines!
 
 🚀 **Happy Coding!**
