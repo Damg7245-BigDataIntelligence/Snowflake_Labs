@@ -1,0 +1,1 @@
+/Users/janvichitroda/Documents/Janvi/NEU/Big_Data_Intelligence_Analytics/Assignment 3/Labs/Lab3/Snowflake_Native_Apps/sfguide-getting-started-with-native-apps/app/src/libraries/udf.py
